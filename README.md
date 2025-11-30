@@ -1,8 +1,8 @@
-
+<img width="1877" height="865" alt="Screenshot 2025-11-30 004409" src="https://github.com/user-attachments/assets/b3ac0e00-14f9-4f83-9b52-39d7bdb25e0e" />
 <img width="1856" height="905" alt="Screenshot 2025-11-30 004430" src="https://github.com/user-attachments/assets/da4b3792-474a-4092-94c3-8f36a18e54dc" />
 <img width="1867" height="911" alt="Screenshot 2025-11-30 004503" src="https://github.com/user-attachments/assets/7424d2da-dfca-461b-a041-314239a9cd11" />
 <img width="1869" height="911" alt="Screenshot 2025-11-30 004529" src="https://github.com/user-attachments/assets/2ab4daf2-b8a4-4068-b070-219a683741c6" />
-<img width="1877" height="865" alt="Screenshot 2025-11-30 004409" src="https://github.com/user-attachments/assets/b3ac0e00-14f9-4f83-9b52-39d7bdb25e0e" />
+
 # Fraud Detection Pipeline
 
 An end-to-end ML system for detecting credit card fraud. Includes model training, a FastAPI server for predictions, and a Streamlit dashboard for monitoring.
