@@ -1,3 +1,8 @@
+
+<img width="1856" height="905" alt="Screenshot 2025-11-30 004430" src="https://github.com/user-attachments/assets/da4b3792-474a-4092-94c3-8f36a18e54dc" />
+<img width="1867" height="911" alt="Screenshot 2025-11-30 004503" src="https://github.com/user-attachments/assets/7424d2da-dfca-461b-a041-314239a9cd11" />
+<img width="1869" height="911" alt="Screenshot 2025-11-30 004529" src="https://github.com/user-attachments/assets/2ab4daf2-b8a4-4068-b070-219a683741c6" />
+<img width="1877" height="865" alt="Screenshot 2025-11-30 004409" src="https://github.com/user-attachments/assets/b3ac0e00-14f9-4f83-9b52-39d7bdb25e0e" />
 # Fraud Detection Pipeline
 
 An end-to-end ML system for detecting credit card fraud. Includes model training, a FastAPI server for predictions, and a Streamlit dashboard for monitoring.
@@ -191,24 +196,7 @@ Then this model at 85% recall would catch an extra 50 frauds per year = $750K sa
 
 Obviously these numbers are made up for the example dataset, but the point is you can translate model metrics into dollars. That's what actuarial firms care about.
 
-## Things I Learned
 
-**PR-AUC > ROC-AUC for imbalanced data.** This was a big one. ROC-AUC looks great but doesn't tell you if the model actually catches fraud.
-
-**Default threshold (0.5) is usually wrong.** You need to pick a threshold based on business constraints - how much fraud can you tolerate missing vs how many false alarms can investigators handle.
-
-**Production is different than notebooks.** Error handling, logging, monitoring, API design - none of that matters in a Jupyter notebook but it's most of the work in production.
-
-**Class weights > oversampling for tree models.** SMOTE made my models worse. Just using scale_pos_weight was better and faster.
-
-## What I'd Add Next
-
-- SHAP values to explain individual predictions
-- Automated drift detection with Evidently
-- Docker container to make deployment easier
-- Real A/B testing between models
-- Threshold optimization based on actual costs (not just F1)
-- Model retraining pipeline when performance drops
 
 ## Dataset
 
@@ -219,12 +207,3 @@ https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 492 frauds (0.17%)  
 Features are PCA-transformed for privacy  
 
-## About
-
-Built by Gabriel [Last Name]
-
-This was a portfolio project to learn production ML and have something concrete to discuss in interviews for actuarial/risk analyst roles.
-
-GitHub: github.com/your-username  
-LinkedIn: linkedin.com/in/your-profile  
-Email: your.email@example.com
